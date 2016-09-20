@@ -17,7 +17,8 @@ struct Node{
 template<class T>
 struct Stacki
 {
-  Node<T> * Root;
+  Node<T> * Head;
+  Node<T> * Tail;
   bool Push(T data);
   bool Pop();
   void Print();
