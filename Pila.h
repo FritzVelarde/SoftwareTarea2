@@ -24,6 +24,11 @@ struct Stacki
 		Head = Tail = NULL;
 	}
 
+	T GetHead(){
+	    if ( Head != NULL ) return Head->data;
+	    else return -1;
+	};
+
 	bool Push(T data){
 		if ( Head == NULL ){
 			Head = Tail = new Node<T>(NULL, data);
