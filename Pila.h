@@ -36,4 +36,12 @@ struct Stacki
 
 	bool Pop();
 	void Print();
+	
+	//Si Head y Tail apuntan a nulo, está vacía
+	bool Empty(){
+
+		if(!Head && !Tail)
+			return true;
+		return false;
+	}
 };
